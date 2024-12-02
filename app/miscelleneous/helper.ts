@@ -12,7 +12,7 @@ export const reviews = [
     {
         text: 'Easy to plug into web3',
         name: 'Flex87',
-        rating: "4.7/5"
+        rating: "4.9/5"
     },
 ]
 
@@ -109,7 +109,7 @@ export const walletProviders = [
     },
     {
         logoname: 'cryp.png',
-        name: 'Crypto.com|Defi wallet'
+        name: 'Crypto.com | Defi wallet'
     },
     {
         logoname: 'tre.png',

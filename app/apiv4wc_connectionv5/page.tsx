@@ -16,15 +16,15 @@ const ApiV4ConnFailed = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-5 w-screen h-screen bg-black text-gray-600 p-10">
+    <div className="flex flex-col items-center justify-center gap-10 w-screen h-screen bg-black text-gray-600 p-10">
       <div className="flex items-center gap-3">
         <Image src="/image/wc1.png" height={50} width={50} alt="wallet_conn" />
-        <h3 className="text-white font-bold">Walletconnect</h3>
+        <h3 className="text-white font-bold">Wallet Connect</h3>
       </div>
 
       {/* Section with fade effect */}
       <div
-        className={`bg-red-100 max-w-[500px] rounded-md p-3 cursor-pointer transition-opacity ease duration-500 ${
+        className={`bg-red-100 max-w-[500px] rounded-md p-3 py-2 cursor-pointer transition-opacity ease duration-500 ${
           isFading ? 'opacity-100' : 'opacity-50'
         }`}
       >

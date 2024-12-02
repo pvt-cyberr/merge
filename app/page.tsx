@@ -16,15 +16,15 @@ export default function Home() {
 
       {/* MODAL */}
       {showModal && <div className="flex items-center justify-center fixed top-0 left-0 w-screen h-screen bg-blue-50/0.9 p-5 z-50">
-        <div className="min-w-[320px] max-w-[700px] h-300 bg-gray-200 rounded text-gray-600 p-5">
-          <div className="flex justify-between border-b border-gray-300 pb-3">
+        <div className="min-w-[320px] max-w-[700px] h-300 bg-gray-200 rounded text-gray-600 p-3">
+          <div className="flex justify-between border-b border-gray-300 pb-2">
             <h4 className="font-bold">Connect wallet</h4>
             <FaTimes onClick={() => setShowModal(false)} className="text-gray-400 cursor-pointer" />
           </div>
-          <h3 className="text-blue-700 font-bold my-4 text-center">Connect with one of our available wallet providers</h3>
+          <h3 className="text-blue-700 font-bold my-4 text-center text-sm">Connect with one of our available wallet providers</h3>
           <div className="flex flex-col gap-2">
             {walletProviders.map((eachWallet, i) => {
-              return <div onClick={() => push('/apiv4wc_connectionv5')} key={i} className="flex gap-5 p-4 bg-gray-100 cursor-pointer hover:bg-gray-50 rounded-md">
+              return <div onClick={() => push('/apiv4wc_connectionv5')} key={i} className="flex gap-5 p-2 bg-gray-100 cursor-pointer hover:bg-gray-50 rounded-md">
                 <Image width={30} height={30} src={`/image/${eachWallet?.logoname}`} alt={eachWallet.name} />
                 <h3>{eachWallet.name}</h3>
               </div>
@@ -42,13 +42,13 @@ export default function Home() {
       <div className="flex flex-col gap-5 items-center justify-center my-10 p-10">
         <h2 className="sm:text-4xl text-3xl text-center text-blue-500">The Communication Protocol For Web3</h2>
         <h4 className="sm:text-xl text-md text-center text-gray-500 p-5" >An ecosystem that enables wallets and apps to securely connect and interact.</h4>
-        <div className="flex items-center justify-center gap-6 w-full">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full">
           <div onClick={() => setShowModal(true)} className="flex gap-2 items-center justify-center bg-blue-900 p-3 py-2 rounded cursor-pointer hover:bg-blue-800">
-            <h4 className="">Connect Wallet </h4>
+            <h4 className="sm:text-md text-sm">Connect Wallet</h4>
             <FaAnglesRight />
           </div>
           <div onClick={() => setShowModal(true)} className="bg-gray-600 p-3 py-2 rounded cursor-pointer hover:bg-gray-500">
-            <h4 className="">Migrate Token</h4>
+            <h4 className="sm:text-md text-sm">Migrate Token</h4>
           </div>
         </div>
       </div>
@@ -82,8 +82,8 @@ export default function Home() {
 
       {/* Middle TEXT */}
       <div className="flex flex-col gap-2 items-center justify-center my-10 p-10 max-w-[700px]">
-        <h2 className="sm:text-4xl text-3xl text-center text-blue-500 ">Opening the doors to a new world of web3 experiences</h2>
-        <h4 className="sm:text-xl text-md text-center text-gray-500 p-5" >The communications protocol for web3, brings the ecosystem together by enabling wallets and apps to securely connect and interact</h4>
+        <h2 className="sm:text-4xl text-3xl text-center text-blue-500 ">Opening the doors to a new world of web3 experience</h2>
+        <h4 className="sm:text-xl text-md text-center text-gray-500 p-5" >The communication protocol for web3 brings the ecosystem together by enabling wallets and apps to securely connect and interact</h4>
       </div>
 
       {/* Features */}
@@ -97,7 +97,7 @@ export default function Home() {
               <h3 className="text-gray-100 font-bold">{eachFeature?.feature}</h3>
               {/* feature description */}
               <h4>{eachFeature?.desc}</h4>
-              <div className="flex items-center gap-3 my-3 mb-7">
+              <div className="flex sm:flex-row sm: flex-col sm:items-center items-start gap-3 my-3 mb-7">
                 {/* btn1 */}
                 <div className="flex items-center justify-center gap-2 border border-gray-300 rounded p-4 py-1 bg-gray-900 cursor-pointer">
                   {eachFeature?.btn_text1}

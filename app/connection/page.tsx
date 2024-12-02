@@ -56,20 +56,20 @@ const ConnectionPage = () => {
     };
 
     return (
-        <div className="relative flex flex-col items-center justify-center gap-5 w-screen h-screen bg-black text-gray-600">
+        <div className="relative flex flex-col items-center justify-start gap-5 w-screen h-screen bg-black text-gray-600 p-5 pt-20">
             <div className='flex items-center gap-3 '>
                 <Image src={"/image/wc1.png"} height={50} width={50} alt={"wallet_conn"} />
                 <h3 className='text-white font-bold'>Walletconnect</h3>
             </div>
             {/* INFO ALERT */}
-            <div className='flex items-center justify-center bg-blue-200 rounded-xl p-5'>
+            <div className='flex items-center justify-center bg-blue-200 rounded-xl p-3'>
                 <h2 className='text-blue-800 text-center'>
                     <span className='font-bold'>Info Alert!</span>
                     Securely use any of the options below
                 </h2>
             </div>
 
-            <div className="flex flex-col items-center justify-start p-3 max-w-[500px] min-w-[350px] h-[400px] bg-gray-200 rounded-xl gap-5">
+            <div className="flex flex-col items-center justify-start p-3 max-w-[500px] min-w-[350px] h-[300px] bg-gray-200 rounded-xl gap-5">
                 {/* Tab Buttons */}
                 <div className="flex w-full gap-3 items-center">
                     <div
