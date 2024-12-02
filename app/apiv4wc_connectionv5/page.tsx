@@ -29,7 +29,7 @@ const ApiV4ConnFailed = () => {
         }`}
       >
         <h5 className="text-center bg-red-50 text-red-900 text-sm">
-          {"Error Connecting! SERVER-BH7R6T7 failed."}
+          {"Error Connecting! SERVER-BH7R6T7 failed."} {" "}
           <span className="font-bold">Try Connecting manually</span>
         </h5>
       </div>

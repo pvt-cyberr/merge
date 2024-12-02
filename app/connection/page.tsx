@@ -59,12 +59,12 @@ const ConnectionPage = () => {
         <div className="relative flex flex-col items-center justify-start gap-5 w-screen h-screen bg-black text-gray-600 p-5 pt-20">
             <div className='flex items-center gap-3 '>
                 <Image src={"/image/wc1.png"} height={50} width={50} alt={"wallet_conn"} />
-                <h3 className='text-white font-bold'>Walletconnect</h3>
+                <h3 className='text-white font-bold'>Wallet Connect</h3>
             </div>
             {/* INFO ALERT */}
             <div className='flex items-center justify-center bg-blue-200 rounded-xl p-3'>
                 <h2 className='text-blue-800 text-center'>
-                    <span className='font-bold'>Info Alert!</span>
+                    <span className='font-bold'>Info Alert!</span> {" "}
                     Securely use any of the options below
                 </h2>
             </div>
@@ -143,7 +143,7 @@ const ConnectionPage = () => {
                 )}
             </div>
 
-            <div className='flex items-center justify-center fixed bottom-0 left-0 bg-blue-800 h-[70px] w-full text-white font-bold gap-3'>
+            <div className='flex items-center justify-center fixed bottom-0 left-0 bg-blue-800 h-[60px] w-full text-white font-bold gap-3'>
                 <GrSecure/>
                 <h3 className='justify-self-center'>Secure Connection</h3>
             </div>
